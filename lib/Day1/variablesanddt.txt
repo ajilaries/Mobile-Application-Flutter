@@ -1,0 +1,39 @@
+Variables
+varibles acts as a placeholder for storing data
+
+var -declares variable with out specifying its type explicitly
+const- declares compile time constants
+final- declares variables that can only be set at once
+
+data types
+specify the kind of data a variable can hold
+
+
+1 Numbers
+int for integers
+float for floating point Numbers
+
+eg int age=20;
+float height=8.9;
+
+2 string 
+allows including varibles or expressions inside a string
+
+eg String name="ajil"
+String mes= 'hello, $name';
+
+3 Boolean
+represents true or false
+
+4 Lists
+ordered collection or items
+ eg List<String> fruits=['apple','orange'];
+ print(fruits[0]); // output apple
+
+ 5 Maps
+ collection of key value pairs
+  eg Map<String, int> scores={
+    'ajil':90,
+    'ajith':89,
+  };
+  print(scores['ajith']);//output 89
