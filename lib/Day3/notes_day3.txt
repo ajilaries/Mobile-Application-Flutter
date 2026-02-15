@@ -1,0 +1,86 @@
+What is a Widget? - Everything is a widget
+
+Stateless Widget- Ui doesnt change after it is build  and which is used for static content
+
+example use cases: text, icon, static ui screens
+it has only 
+build() is called only when the widget is first rendered
+
+Struture
+
+class MyWidget extends StatelessWidget{
+    const MyWidget({super.key});
+
+    @override
+    Widget build(BuildContext context){
+        return Text("Hello");
+    }
+}
+use cases which is used for creating static ui like logo, icons, labels and static profile info and appbar title
+
+
+Statefull Widgets
+a widget that can change its ui dynamically during runtime
+used when data changes
+
+Internal Working 
+Stateful widget is actually TWO CLASSES
+1, Widget class-Immutatble(ui configuration)
+    
+    class MyWidget extends StatefulWidget
+
+2, State class -Mutable (data+logic)
+
+    class _MyWidgetState extends State<MyWidget>
+
+
+Lifecycle Flow
+1.createState()
+    Flutter creates the state object
+2.initState()
+    called once and which is used for API calls, controllers and inital values
+3.build()
+    creates ui and which is called first time after setState()
+4.setState()
+    This is the trigger it tells flutter: data has changed rebuild the ui 
+     
+    flutter then calls build() again.
+5.dispose() 
+    called when widget is removed
+    used for closing controllers, stopping animations and clearing memory
+
+
+Struture
+
+class Counter extends StatefulWidget{
+    const Counter({super.key});
+
+    @override
+    State<Counter> createState()=>_CounterState();
+
+}
+
+class _CounterState extends State<Counter>{
+    int count=0;
+
+    @override
+    Widget build(BuildContext context){
+        return Column(
+            children:[
+                Text("$count),
+                ElevatedButton(
+                    onPressed:(){
+                        setState((){
+                            count++;
+                        });
+                    },
+                    child: Text("increment"),
+                )
+            ],
+        );
+    }
+}
+
+
+Mutable means can be changed after it is created
+Immutatble mean cannot be changed after it is created
