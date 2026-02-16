@@ -1,0 +1,43 @@
+What is Dialog?
+a Dialog is a small popup window that appears on the top of the screen to give important informations, ask for user confirmations, and take a small input , it blocks the background ui until the user responds
+
+1.Animated Container
+-A container that automatically animated when its propreties change.
+
+Animated propreties
+.width/height
+.color
+.padding
+.margin
+.borderRadius
+.alignment
+
+//here the parameter duration which is required
+
+
+2.Animated Opacity
+-used to create fade in/fade out effects
+
+proprety
+Opacity:0-> invisible
+Opacity:1-> visible
+
+Dialogs in Flutter
+Dialogs are used to  get user confirmation or input
+
+1.Alert Dialog
+ used for delete confirmations, logout confirmations, warning messages
+
+ Struture
+    title:
+    content:
+    actions:
+
+Function used
+    showDialog()
+
+2.Bottom Sheet
+  a panal that slides from the bottom of the screen
+
+Functions used
+    showModalBottomSheet()
