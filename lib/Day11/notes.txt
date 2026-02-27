@@ -1,0 +1,44 @@
+In Flutter (and Dart more generally), convert importing is used to handle conversions between different data formats, such as JSON, UTF-8, and Base64. There are two main ways you’ll encounter it:
+1. Core Library: dart:convert
+- Comes built-in with Dart, no extra dependency needed.
+- Provides essential tools like:
+- jsonEncode / jsonDecode → Convert between JSON and Dart objects.
+- utf8.encode / utf8.decode → Work with UTF-8 strings and byte arrays.
+- base64.encode / base64.decode → Encode/decode Base64 data.
+- Best for everyday serialization tasks (e.g., API calls, local storage).
+
+
+initState() life cycle methods , runs once when widget is created
+setState() updates UI when data changes
+
+Variables used
+
+List- stores collections(allusers, filteredusers)
+int- stored numbers(user count)
+TextEditingController-controls text input fields 
+late- declares a variable that will be initialized later
+Future- represents a value that will be available later(async)
+
+Networking
+
+http.get()- make a GET request to an API
+Uri.parse()- converts a string nto a URI objects
+jsonDecode()- converts JSON string into Dart objects
+
+
+Async Programming
+
+FutureBuilder- widget that builds UI based on Future
+ConnectionState.waiting- shows loading state
+snapshot-hasError- handles error state
+snapshot.data- contains the result when the future completes
+
+UI Widgets
+
+Scaffold- basic page layout(AppBar+ body)
+AppBar- top bar with title 
+RefreshIndicator- pull-to-refresh functionality
+TextField- input field for search
+ListView.builder- builds a scrollable list dynamically
+Card / ListTile - styled list items
+CircleAvathar - circular icon with text inside
