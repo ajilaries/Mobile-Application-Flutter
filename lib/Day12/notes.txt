@@ -1,0 +1,30 @@
+What is provider?
+Provider is a state management solution that, 
+Stores app data outside the ui
+Notifies ui when data changes
+allows multiple screens to access same data
+
+It uses
+ChangeNotifier
+notifyListeners()
+
+we have seperated the logic and ui on separate 
+
+///ChangeNotifier
+
+class UserProvider extends ChangeNotifier- means that this class can notify the ui when data changes
+whenever data updates: notifyListeners();  this tells flutter: rebuild whoever is watching means
+
+
+///context.watch vs context.read
+
+//context.read() is used to call a method without listening
+example..
+context.read<UserProvider>().fetchUsers();
+
+inside initState()...
+
+//context.watch() is used to listen for changes
+example
+final provider= context.watch<UserProvider>();
+whenever provider calls notifyListeners(), this widget rebuilds... that is reactive programming
