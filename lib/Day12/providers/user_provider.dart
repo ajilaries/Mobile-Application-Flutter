@@ -9,6 +9,10 @@ class UserProvider extends ChangeNotifier {
   String? error;
   bool showFavoritesOnly = false;
 
+  get visibleUsers => null;
+
+  get favoriteCount => null;
+
   Future<void> fetchUsers() async {
     isLoading = true;
     notifyListeners();
@@ -75,4 +79,6 @@ class UserProvider extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void updateSearch(String value) {}
 }
