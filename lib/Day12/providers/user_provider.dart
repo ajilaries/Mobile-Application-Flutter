@@ -81,4 +81,6 @@ class UserProvider extends ChangeNotifier {
   }
 
   void updateSearch(String value) {}
+
+  void addUser(String text, String text2, String text3) {}
 }
