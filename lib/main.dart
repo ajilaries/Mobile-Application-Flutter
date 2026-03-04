@@ -1,20 +1,44 @@
 import 'package:flutter/material.dart';
-// import 'package:mobile_application_development/Day5/add_student_screen.dart';
-// // import 'day3/practice_ui.dart';
-// import '../Day4/dialog_practice_screen.dart';
-import '../Day6/bottom_nav_example.dart';
+import 'Projects/music_ui/screens/home_screen.dart';
+import '../Day11/food_practice_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int index = 0;
+
+  final screens = const [HomeScreen(), FoodPracticeScreen()];
+
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:BottomNavExample(), // 👈 directly open your practice screen
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: const Color(0xff0F0F1B),
+      ),
+      home: Scaffold(
+        body: screens[index],
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: const Color(0xff1A1A2E),
+          selectedItemColor: Colors.deepPurpleAccent,
+          unselectedItemColor: Colors.white54,
+          currentIndex: index,
+          onTap: (value) => setState(() => index = value),
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          ],
+        ),
+      ),
     );
   }
 }
