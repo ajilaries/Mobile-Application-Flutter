@@ -1,0 +1,13 @@
+BottomNavigationBar-purpose
+
+Used to:
+switch bettween the main screens
+keep app structure clean
+provide fast navigation 
+
+that was used in insta, wp and banking applications
+
+Basic BottomNav logic
+
+int currentIndex=0;
+body: screens[currentIndex]
