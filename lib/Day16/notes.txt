@@ -1,0 +1,31 @@
+texteditingcontroller is used to control and access the text inside a textfield or textformfield
+
+When a user types something in a textfield , you usually want to use that value(login,search,forms etc)
+
+
+Map<String, dynamic> 
+
+In Dart a Map stores day in key-value pairs
+.String - the key
+.dynamic - the value can be any type(int,double, string, list ,map)
+
+Why dynamic?
+Because Api data can contain different data types
+
+The ? (Null Safety)
+
+
+MaterialApp is the widget that sets up your entire app using Material Design(Google's design system). It acts like the main container that manages naviagation, themes, routes, and the basic app structure
+When you wrap your app with MaterialApp, widgets like:
+
+AppBar
+
+Scaffold
+
+FloatingActionButton
+
+SnackBar
+
+Drawer
+
+automatically get the Material styling and behavior.
