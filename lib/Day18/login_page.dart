@@ -54,7 +54,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
 
               TextField(
-                obscureText: true,
+                obscureText: true,//which is for hiding the user input as passwords
                 decoration: InputDecoration(
                   labelText: "Password",
                   border: OutlineInputBorder(
@@ -86,3 +86,17 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+
+///Documentation Section
+///here we used to learn the things like the importand Flutter UI widgets
+///Scaffold-page layout
+///Column-vertical layout
+///sizedbox- spacing 
+///textfield-input 
+///elevatedbutton-action button
+///paddin-spacing around ui
+///
+///
+///here the mainaxisalignment which is for controls the vertical positioning and the
+///crossaxisalignment which controls the horizontal posistioning
