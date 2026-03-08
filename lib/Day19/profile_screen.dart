@@ -81,3 +81,8 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
+///Here we used to learn CircleAvathar -profile picture
+///ListTile- used for setting style UI
+///Divider used for separations
+///
