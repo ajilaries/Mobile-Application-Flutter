@@ -1,0 +1,207 @@
+1.MaterialApp is the root widget for most flutter applications that follow material design
+
+Purpose:
+Provides the basic structure of a Flutter applications
+Handles the navigation
+Applies themes
+Connects widgets like scaffold
+
+2.scaffold-scaffold provides the basic visual layout structyre of  a screen
+
+AppBar
+Body
+FloatingActionButton
+Drawer
+BottomNavigationBar
+
+
+3.AppBar-creates the top navigation  bar of the screen
+
+title
+actions (icons on the right)
+leading icons
+background color
+
+
+4.Text widget-text displays the text on the screen
+
+fontsize
+fontweight
+color
+letterspacing
+
+5.Column-arranges the widgets vertically
+
+
+mainAxisAlignment
+crossAxisAlignment
+
+6.Row-arranges widgets horizontally
+
+"
+"
+
+7.Expanded-makes a widget fill the remaining available space Used inside Row or Column
+
+8.Padding-adds space inside a widget
+
+EdgeInsets.all()
+EdgeInsets.symmetric()
+EdgeInsets.only()
+
+9. SizedBox
+
+SizedBox creates fixed spacing or fixed size.
+
+Example:
+
+SizedBox(height: 20)
+
+Used for:
+
+spacing
+
+fixed width/height
+
+10. CircleAvatar
+
+Used to show circular profile images.
+
+Example:
+
+CircleAvatar( radius: 40, backgroundImage: NetworkImage("https://example.com/image.jpg"), )
+
+Common uses:
+
+profile pictures
+
+story icons
+
+11. Icon and IconButton
+
+Icons display graphical symbols.
+
+Example:
+
+Icon(Icons.favorite)
+
+IconButton allows interaction.
+
+Example:
+
+IconButton( icon: Icon(Icons.favorite), onPressed: () {}, )
+
+12. ListTile
+
+ListTile is used for list-based UI like settings screens.
+
+Structure:
+
+leading icon
+
+title
+
+subtitle
+
+trailing icon
+
+Example:
+
+ListTile( leading: Icon(Icons.email), title: Text("Email"), subtitle: Text("user@email.com"), )
+
+13. Divider
+
+Divider draws a horizontal line used to separate content.
+
+Example:
+
+Divider()
+
+Common in:
+
+settings screens
+
+lists
+
+14. Buttons
+
+OutlinedButton
+
+Example:
+
+OutlinedButton( onPressed: () {}, child: Text("Edit Profile"), )
+
+Other button types:
+
+ElevatedButton
+
+TextButton
+
+15. GridView
+
+GridView displays items in a grid layout.
+
+Used in:
+
+Instagram post grid
+
+photo galleries
+
+Example:
+
+GridView.builder( gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( crossAxisCount: 3, ), itemBuilder: (context, index) { return Container(); }, )
+
+Important properties:
+
+crossAxisCount
+
+crossAxisSpacing
+
+mainAxisSpacing
+
+16. SingleChildScrollView
+
+Allows scrolling when content is larger than the screen.
+
+Example:
+
+SingleChildScrollView( child: Column( children: [...] ), )
+
+Used for:
+
+profile pages
+
+long layouts
+
+17. NetworkImage
+
+Loads images from the internet.
+
+Example:
+
+Image.network("https://picsum.photos/200")
+
+Used in:
+
+post images
+
+profile pictures
+
+18. StatelessWidget
+
+StatelessWidget is used when the UI does not change dynamically.
+
+Example:
+
+class HomeScreen extends StatelessWidget { @override Widget build(BuildContext context) { return Scaffold(); } }
+
+19. Widget Tree
+
+Flutter UI is built using a widget tree.
+
+Example structure:
+
+MaterialApp └ Scaffold └ Column ├ Text ├ Image └ Button
+
+Understanding the widget tree is essential for designing layouts.
+
