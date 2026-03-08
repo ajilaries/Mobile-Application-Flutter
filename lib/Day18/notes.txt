@@ -1,0 +1,3 @@
+Here the real ui design practicing begins 
+Basic ui with 
+padding,textfield with simple ui
