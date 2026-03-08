@@ -22,6 +22,7 @@ class LoginPage2 extends StatelessWidget {
               const SizedBox(height: 12,),
               TextField(
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.email),
                   labelText: "enter email",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -35,6 +36,7 @@ class LoginPage2 extends StatelessWidget {
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.password),
                   labelText: "Enter password",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
