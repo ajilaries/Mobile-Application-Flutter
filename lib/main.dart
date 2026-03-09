@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'Projects/music_ui/screens/home_screen.dart';
-import '../Day11/food_practice_screen.dart';
+// import 'Day19/home_screen.dart';
+// import 'Day19/insta_profile.dart';
+import 'Day20/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int index = 0;
 
-  final screens = const [HomeScreen(), FoodPracticeScreen()];
+  final screens = const [HomePage()];
 
   @override
   Widget build(BuildContext context) {
