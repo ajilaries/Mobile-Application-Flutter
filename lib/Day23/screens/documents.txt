@@ -1,0 +1,33 @@
+Step 1-understanding the screen layout
+
+
+Profile Screen Layout
+
+AppBar
+   ↓
+Profile Picture
+   ↓
+Name + Bio
+   ↓
+Stats Row
+   ↓
+Edit Profile Button
+   ↓
+Posts Grid
+
+Documentation Note
+Profile Screen Layout
+
+AppBar
+   ↓
+Profile Picture
+   ↓
+Name + Bio
+   ↓
+Stats Row
+   ↓
+Edit Profile Button
+   ↓
+Posts Grid
+
+https://chatgpt.com/c/69b4d800-0610-8320-9a04-54fd285fff6c notes are here
