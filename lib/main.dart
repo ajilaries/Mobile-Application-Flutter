@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'Day19/home_screen.dart';
 // import 'Day19/insta_profile.dart';
-import 'Day20/main.dart';
+// import 'Day20/main.dart';
+import 'Day23/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int index = 0;
 
-  final screens = const [HomePage()];
+  final screens = const [SmartApp()];
 
   @override
   Widget build(BuildContext context) {
