@@ -40,3 +40,21 @@ ListView → scrolling feed
 Column → grouping widgets vertically
 ListTile → display list information
 SizedBox → spacing between widgets
+
+
+chat Screen
+Project: Dynamic Chat List
+
+Concepts Learned
+
+StatefulWidget
+Used when UI needs to change dynamically.
+
+ListView.builder
+Efficient way to build dynamic lists.
+
+setState()
+Updates UI when data changes.
+
+Data Structure
+List<Map<String,String>>
