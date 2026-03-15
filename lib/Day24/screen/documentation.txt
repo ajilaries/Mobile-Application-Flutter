@@ -1,0 +1,25 @@
+Screen: Weather UI
+
+Widgets Used
+
+Scaffold
+Column
+Row
+Text
+Icon
+Padding
+Center
+
+Concepts Learned
+
+Column → vertical layout
+Row → horizontal layout
+Column inside Row → info panels
+Center → align widgets in middle
+
+
+
+Youtube home Screen
+Widget:ListView
+purpose :  creates a scrollabe ListView
+used in feed, chat list, and video list
