@@ -23,3 +23,20 @@ Youtube home Screen
 Widget:ListView
 purpose :  creates a scrollabe ListView
 used in feed, chat list, and video list
+Screen: YouTube Home UI
+
+Widgets Used
+- Scaffold
+- AppBar
+- ListView
+- Column
+- Container
+- ListTile
+- CircleAvatar
+- SizedBox
+
+Concept Learned
+ListView → scrolling feed
+Column → grouping widgets vertically
+ListTile → display list information
+SizedBox → spacing between widgets
